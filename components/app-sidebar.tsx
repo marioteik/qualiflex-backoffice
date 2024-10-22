@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { LayoutDashboard, Truck, Users } from "lucide-react";
+import { LayoutDashboard, MapIcon, Truck, Users } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
 import { NavAdministration } from "@/components/nav-administration";
@@ -28,8 +28,20 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: LayoutDashboard,
+      isActive: true,
+    },
+    {
+      title: "Remessas",
+      url: "/remessas",
+      icon: Truck,
+      isActive: true,
+    },
+    {
+      title: "Mapa Dinâmico",
+      url: "/mapa-controle",
+      icon: MapIcon,
       isActive: true,
     },
     // {

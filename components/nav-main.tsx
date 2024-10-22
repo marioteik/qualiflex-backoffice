@@ -70,7 +70,7 @@ export function NavMain({
             </Collapsible>
           ) : (
             <SidebarMenuButton tooltip={item.title} key={item.title} asChild>
-              <Link href="/">
+              <Link href={item.url}>
                 {item.icon && <item.icon />}
                 <span>{item.title}</span>
               </Link>
